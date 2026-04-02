@@ -14,9 +14,17 @@ class Animal:public LivingBeing{
     }
 };
 
+class Dog:public Animal{
+public:
+    void bark(){
+        cout<<"Barking"<<endl;
+    }
+};
+
+
 int main(){
     Dog d;
-    d.breathe();
+    d.breathing();
     d.eat();
     d.bark();
     return 0;
