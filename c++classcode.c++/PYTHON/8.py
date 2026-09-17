@@ -1,13 +1,13 @@
 from scipy.stats import norm
 
-mean =70
-std =10
-x=80
+mean =50
+std =8
 
-prob = norm.cdf(x,mean,std)
 
-print("poisson distribution")
-print("------------------------")
+lower =40
+upper =60
+
+prob = norm.cdf(upper,mean,std)-norm.cdf(lower,mean,std)
 print("probablity = ",round(prob,5))
 print("Mean = ",mean)
 print("variance =",std**2)

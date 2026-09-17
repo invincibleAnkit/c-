@@ -3,9 +3,9 @@ import statistics as stats
 x = [10,20,30,40,50]
 f = [2,5,8,4,1]
 
-#expand the data
 
-data = []  #empty list
+
+data = []  
 
 for value , freq in zip(x,f):
     data.extend([value]*freq)
